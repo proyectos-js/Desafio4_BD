@@ -12,7 +12,7 @@ PRIMARY KEY (id));
 CREATE TABLE editorial(id SERIAL, editorial VARCHAR(20), PRIMARY KEY (id));
 
 
-CREATE TABLE libro(cod_libro INT, titulo VARCHAR(25), id_editorial INT, 
+CREATE TABLE libro(cod_libro INT, titulo VARCHAR(100), id_editorial INT, 
 PRIMARY KEY (cod_libro), 
 FOREIGN KEY (id_editorial) REFERENCES editorial(id));
 
